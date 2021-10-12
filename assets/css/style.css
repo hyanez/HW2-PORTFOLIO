@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: white;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  padding: 15px 0 15px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  background-color: rgba(28, 79, 145, 0.712);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+nav a {
+  color: #dadada;
+  text-decoration: none;
+  display: block;
+  padding: 10px 10px 10px 10px;
+}
+
+nav a:hover {
+  background-color: rgba(28, 79, 145, 0.938);
+  color: white;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+.face {
+  background-image: url("../blue-source-code.jpeg");
+  color: #dadada;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-height: 40vh;
+}
+
+.face h1 {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: lightskyblue;
+  color: black;
+}
+
+.face .icon {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 10%;
+  border-radius: 50%;
+  box-shadow: 5px 10px #888888;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-section .heading {
+  flex: 0 0 300px;
+  border-right: 2px black solid;
+  margin: 2px;
+}
+
+.content-section main {
+  padding-left: 20px;
+}
+
+.content-section main:hover {
+  background-color: lemonchiffon;
+}
+
+.content-section h2 {
+  text-align: right;
+}
+
+.project-section main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-section .project-item {
+  width: 50%;
+  opacity: 0.5;
+}
+
+.project-section .project-item:hover {
+  opacity: 1;
+}
+
+.project-section .project-large-item {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.project-section .project-large-item:hover {
+  opacity: 1;
+}
+
+.contact-section main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-section .contact-item {
+  text-decoration: underline;
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Hugo's Portfolio</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <h1>Ben's Portfolio</h1>
-    <p>Magic to come</p>
-</body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#work">Projects</a>
+      <a href="#contacts">Contact</a>
+    </nav>
+
+    <header class="face">
+      <h1>Hugo's Portfolio</h1>
+      <div>
+        <img class="icon" src="./assets/images/icon.jpeg" />
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- beginning content section -->
+      <section id="about" class="content-section portfolio-section">
+        <div class="heading">
+          <h1>About Me</h1>
+        </div>
+        <main>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            labore delectus hic ipsa laudantium, at, modi soluta quaerat
+            blanditiis sit aliquam, quis natus alias? Blanditiis recusandae non
+            obcaecati quidem exercitationem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            labore delectus hic ipsa laudantium, at, modi soluta quaerat
+            blanditiis sit aliquam, quis natus alias? Blanditiis recusandae non
+            obcaecati quidem exercitationem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            labore delectus hic ipsa laudantium, at, modi soluta quaerat
+            blanditiis sit aliquam, quis natus alias? Blanditiis recusandae non
+            obcaecati quidem exercitationem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            labore delectus hic ipsa laudantium, at, modi soluta quaerat
+            blanditiis sit aliquam, quis natus alias? Blanditiis recusandae non
+            obcaecati quidem exercitationem.
+          </p>
+        </main>
+      </section>
+      <!-- ending content section -->
+      <!-- beginning content -->
+      <section id="work" class="content-section project-section">
+        <div class="heading">
+          <h1>Projects</h1>
+        </div>
+        <main>
+          <img
+            class="project-large-item"
+            src="./assets/images/javascript-project.jpeg"
+          />
+          <img class="project-item" src="./assets/images/html-project.jpeg" />
+          <img class="project-item" src="./assets/images/css-project.jpeg" />
+        </main>
+      </section>
+      <!-- ending content section -->
+      <!-- beginning content section -->
+      <section id="contacts" class="content-section contact-section">
+        <div class="heading">
+          <h1>Contact Me</h1>
+        </div>
+        <main>
+          <a class="contact-item" href="#">Phone Number</a>
+          <a class="contact-item" href="#">GitHub</a>
+          <a class="contact-item" href="#">LinkedIn</a>
+          <a class="contact-item" href="#">Twitter</a>
+          <a class="contact-item" href="#">Instagram</a>
+        </main>
+      </section>
+      <!-- ending content section -->
+    </main>
+  </body>
 </html>
