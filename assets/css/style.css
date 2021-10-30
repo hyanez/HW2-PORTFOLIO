@@ -21,6 +21,17 @@ p {
   margin: 0;
 }
 
+.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.col-sm-4 {
+  border-right: solid;
+  text-align: right;
+  font-size: 50px;
+}
+
 header {
   padding: 15px 0 15px 0;
   display: flex;
@@ -60,7 +71,7 @@ nav a:last-child {
   display: flex;
   justify-content: right;
   align-items: center;
-  min-height: 40vh;
+  min-height: 53vh;
 }
 
 .face h1 {
@@ -79,62 +90,88 @@ nav a:last-child {
   box-shadow: 5px 10px #888888;
 }
 
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.main-content {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .content-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 25px 0;
+  padding: 10px 0;
 }
 
-.content-section .heading {
+.content-section > h2 {
   flex: 0 0 300px;
-  border-right: 2px black solid;
-  margin: 2px;
+  border-right: 2px solid black;
+  padding-right: 15px;
+  text-align: right;
+  font-size: 4vw;
+  line-height: 1.1;
 }
 
-.content-section main {
-  padding-left: 20px;
+.content-section > div {
+  flex: 0 0 77%;
 }
 
-.content-section main:hover {
+.content-section p {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.prj {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-item {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: calc(50% - 1em);
+  min-height: 150px;
+  max-height: 150px;
+  border: dotted 2px;
+  color: black;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+.projec-item:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.project-item:hover {
   background-color: lemonchiffon;
 }
 
-.content-section h2 {
-  text-align: right;
+.project-item div {
+  background-color: white;
+  padding: 8px 10px;
 }
 
-.project-section main {
-  display: flex;
-  flex-wrap: wrap;
+.project-item h3 {
+  font-size: 1.6rem;
 }
 
-.project-section .project-item {
-  width: 50%;
-  opacity: 0.5;
-}
-
-.project-section .project-item:hover {
-  opacity: 1;
-}
-
-.project-section .project-large-item {
-  width: 100%;
-  opacity: 0.5;
-}
-
-.project-section .project-large-item:hover {
-  opacity: 1;
-}
-
-.contact-section main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.contact-section .contact-item {
-  text-decoration: underline;
-  margin-left: 10px;
-  margin-right: 10px;
+.surf {
+  background-image: url("../images/FoodE-proj.png");
+  background-repeat: no-repeat;
+  background-size: 712px 147px;
 }
